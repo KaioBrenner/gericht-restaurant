@@ -1,0 +1,39 @@
+.app__happyhours {
+    background-image: url("../../assets/happyhours.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    text-align: center;
+}
+
+.app__happyhours h1 {
+    font-size: 7vw;
+}
+
+.app__happyhours p {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 650px) {
+    .app__happyhours p{
+      font-size: 3vw;
+    }
+  
+    .app__happyhours h1 {
+      height: 23vw;
+    }
+    
+    .app__happyhours img {
+      width: 2vw;
+      height: 2vw;
+    }
+  }
+  

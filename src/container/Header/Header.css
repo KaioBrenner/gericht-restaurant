@@ -1,0 +1,98 @@
+/*Home settings*/
+.app__header {
+  background-color: var(--color-black);
+}
+
+.app__header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 117px;
+  font-size: 90px;
+}
+
+.app__header-img img {
+  width: 80%;
+}
+
+/*Header settings*/
+
+.app__header-page_ourservices {
+  background: var(--color-black);
+}
+
+.app__header-banner {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  height: auto; 
+  color: #fff;
+  font-size: 400%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app__header-banner h1 {
+  font-size: 7vw;
+}
+
+.app__header-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../../assets/servicesintro.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.4;
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  height: auto; 
+}
+
+.app__header-page_ourservices-breadcrumb {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.app__header-page_ourservices-breadcrumb p{
+  font-size: 2vw;
+}
+
+.app__header-page_ourservices-breadcrumb img {
+  width: 2vw;
+  height: 2vw;
+}
+
+.app__header-page_ourservices-breadcrumb p:hover {
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  .app__header-page_ourservices-breadcrumb p{
+    font-size: 3vw;
+  }
+
+  .app__header-banner h1 {
+    height: 23vw;
+  }
+  
+  .app__header-page_ourservices-breadcrumb img {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .app__header-h1{
+    font-size: 65px;
+  }
+}

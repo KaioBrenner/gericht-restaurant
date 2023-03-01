@@ -1,0 +1,29 @@
+.app__testimony{
+    background: var(--color-black);
+    padding: 6rem 10rem;
+    text-align: center;
+}
+
+.app__testimony-costumers{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3%;
+}
+
+@media screen and (max-width: 1330px) {
+    .app__testimony-costumers{
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 3%;
+    }    
+}   
+
+@media screen and (max-width: 768px) {
+    .app__testimony{
+        padding: 1.5rem 2.5rem;
+    }    
+}   

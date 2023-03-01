@@ -1,0 +1,12 @@
+.app__delight{
+    background-image: url("../../assets/delight.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 8vw;
+    height: 8vw;
+}
+
+.app__delight-doubleSpoon{
+    width: 65.46px;
+    height: 62.57px;
+}

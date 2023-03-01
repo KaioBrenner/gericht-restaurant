@@ -1,0 +1,76 @@
+.app__teamchef {
+  width: 412px;
+}
+
+.app__teamchef-img {
+  position: relative;
+  width: 100%;
+}
+
+.app__teamchef-img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.app__teamchef-img_info {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.app__teamchef-img_info svg {
+  color: var(--color-white);
+  margin: 0.5rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.app__teamchef-img_info svg:hover {
+  color: var(--color-golden);
+}
+
+.app__teamchef-img:hover .app__teamchef-img_info {
+  z-index: 3;
+  opacity: 1;
+}
+
+.app__teamchef img {
+  width: 100%;
+}
+
+.app__teamchef .p__cormorant {
+  font-size: 2.5em;
+  margin-top: 1rem;
+  line-height: 3.5rem;
+}
+
+.app__teamchef-img_info-content{
+    display: flex;
+    align-items: center;
+    flex: row;
+    justify-content: space-around;
+}
+
+.app__teamchef-img_info-content_line{
+    width: 10px;
+    height: 2px;
+    background: var(--color-golden);
+}
+
+.app__teamchef-img_info-content p{
+    color: var(--color-golden);
+    font-size: 1.2em !important;
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 450px){
+    .app__teamchef-img_info-icons{
+        display: flex;
+        gap: -5px;
+    }
+}

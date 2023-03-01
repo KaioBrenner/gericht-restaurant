@@ -1,0 +1,28 @@
+.app__aboutcontainer{
+    text-align: center;
+}
+.app__aboutcontainer h2{
+    margin-bottom: 2rem;
+}
+.app__aboutcontainer-intro{
+    margin-top: 5rem;
+}
+.app__aboutcontainer-intro .app__video{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+
+@media screen and (max-width: 650px){
+    .app__aboutcontainer h2 {
+        font-size: 13vw;
+        line-height: 19vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .app__aboutcontainer-intro{
+        display: none;
+    }
+}

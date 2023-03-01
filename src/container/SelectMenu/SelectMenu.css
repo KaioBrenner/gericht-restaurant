@@ -1,0 +1,36 @@
+.app__selectmenu-bg {
+  background-image: url("../../assets/menusbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__selectmenu-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vw;
+  height: 20vw;
+  align-items: flex-start;
+}
+.app__selectmenu-options p {
+  font-size: 5vw;
+  display: inline-block;
+}
+
+.app__selectmenu-options p:hover {
+  text-decoration: underline;
+  line-height: 2vw;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  cursor: pointer;
+  position: static;
+  transition: 100s;
+}
+
+

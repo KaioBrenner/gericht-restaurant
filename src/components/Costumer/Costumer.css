@@ -1,0 +1,115 @@
+.app__costumer {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    width: 48.5%;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.app__costumer-imgdiv {
+    position: relative;
+}
+
+.app__costumer-imgdiv img:nth-child(1) {
+    height: 100%;
+}
+
+.app__costumer-imgdiv img:nth-child(2) {
+    position: absolute;
+    z-index: 5;
+    bottom: -18px;
+    right: -0.4vw;
+    width: 47px;
+}
+
+
+.app__costumer-info p:first-child {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.app__costumer-info p:first-child {
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.8vw;
+    line-height: 1.6vw;
+}
+
+.app__costumer-info h4 {
+    font-size: 2vw;
+    line-height: 3vw;
+}
+
+.app__costumer-info p:last-child {
+    color: #f1e9c9;
+}
+
+
+
+@media screen and (max-width: 1330px) {
+
+    .app__costumer {
+        gap: 4%;
+        width: 100%;
+    }
+
+    .app__costumer-info p:first-child {
+        font-size: 1.4vw;
+        line-height: 1.7vw;
+    }
+
+    .app__costumer-info h4 {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+
+    .app__costumer-info p:first-child {
+        font-size: 1.7vw;
+        line-height: 2.2vw;
+    }
+
+    .app__costumer-info h4 {
+        font-size: 3.9vw;
+        line-height: 3.2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .app__costumer {
+        height: 120px;
+        margin-top: 4rem;
+        gap: 1%;
+        width: 100%;
+    }
+
+    .app__costumer-imgdiv img:nth-child(1) {
+        height: 100%;
+    }
+
+    .app__costumer-info p:first-child {
+        font-size: 2.3vw;
+        line-height: 2.7vw;
+    }
+
+    .app__costumer-info p:last-child {
+        font-size: 2.2vw;
+        line-height: 2.3vw;
+    }
+
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .app__costumer-info p:first-child {
+        font-size: 2.9vw;
+        line-height: 3.6vw;
+        padding: 0 0 0.5rem 0 !important;
+    }
+}

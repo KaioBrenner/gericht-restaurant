@@ -1,0 +1,8 @@
+.app__team{
+    background: var(--color-black);
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}

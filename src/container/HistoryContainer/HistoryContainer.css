@@ -1,0 +1,199 @@
+.app__historycontainer{
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.app__historycontainer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.app__historycontainer h2{
+    font-size: 4.6vw;
+    line-height: 6vw;
+}
+
+.app__historycontainer-container_aside{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app__historycontainer-container_aside:nth-child(1){
+    text-align: left;
+}
+
+.app__historycontainer-container_aside:nth-child(1) > p{
+    margin-bottom: 2rem;
+}
+
+.app__historycontainer-container_aside:nth-child(1) > div{
+    height: 80%;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    height: auto; 
+}
+
+.app__historycontainer-container_aside:nth-child(1) div > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.app__historycontainer-container_aside:nth-child(2){
+    text-align: left;
+}
+
+.app__historycontainer-container_aside:nth-child(2) h3{
+    font-size: 3vw;
+}
+
+.app__historycontainer-container_aside:nth-child(2) > div{
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    height: auto; 
+}
+
+.app__historycontainer-container_aside:nth-child(2) .app__historycontainer-container_aside-img > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.app__historycontainer-container_aside > p{
+    color: var(--color-grey);
+    font-size: 1.2vw;
+    line-height: 2.2vw;
+}
+
+
+.app__historycontainer-container_aside-infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 180px !important;
+}
+
+.straight__line{
+    height: 70px !important;
+    width: 2px !important;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    background: rgb(149,149,149);
+    background: linear-gradient(180deg, rgba(149,149,149,1) 0%, rgba(255,255,255,1) 50%, rgba(149,149,149,1) 100%);
+}
+
+.app__historycontainer-container_aside-infos div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: auto;
+}
+
+.app__historycontainer-container_aside-infos-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 167px;
+    flex: 0.1;
+}
+
+.app__historycontainer-container_aside-infos-text p{
+    font-size: 1.8vw;
+    line-height: 2.6vw;
+}
+
+.app__historycontainer-container_aside-infos-text h4{
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.app__historycontainer-container_aside-infos .subheading{
+    margin-bottom: 10px !important;
+    height: 10px !important;
+}
+
+
+@media screen and (max-width: 1050px){
+    .app__historycontainer-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .app__historycontainer-container_aside > p{
+        color: var(--color-grey);
+        font-size: 1.8vw;
+        line-height: 2.8vw;
+    }
+    
+
+    .app__historycontainer-container_aside {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .app__historyabout {
+        background: var(--color-black);
+        padding: 1.5rem 2.5rem !important;
+    }
+    .app__historycontainer-container_aside-infos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        height: auto !important;
+    }
+
+    .app__historycontainer-container_aside:nth-child(2) h3 {
+        font-size: 5vw;
+        line-height: 6vw;
+        margin-top: 2rem;
+    }
+
+    .app__historycontainer-container_aside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .straight__line {
+        display: none !important;
+        margin: 0 auto;
+    }
+
+    .app__historycontainer-container_aside-infos-text h4 {
+        font-size: 1.4em;
+        line-height: 2em;
+    }
+
+    .app__historycontainer-container_aside-infos-text p {
+        font-size: 3vw;
+    }
+
+    /* .app__historycontainer-container_aside-infos-text h4{
+        font-size: 6vw;
+    } */
+}
+
+
+@media screen and (max-width: 650px){
+    .app__historycontainer-container_aside:nth-child(1) > p {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .app__historycontainer h2{
+        font-size: 9vw;
+        line-height: 12vw;
+    }
+}

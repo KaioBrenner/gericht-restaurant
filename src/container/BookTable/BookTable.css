@@ -1,0 +1,122 @@
+.app__booktable {
+  text-align: center;
+  position: relative;
+  top: -1px;
+  padding: 7rem 0 !important;
+}
+
+.app__booktable-container {
+  background: var(--color-black);
+  width: 90%;
+  border: 1px solid #dcca873d;
+  padding: 2rem;
+}
+
+.app__booktable-container_inputs {
+  margin: 3rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app__booktable-container_inputs > * {
+  width: 30%;
+  height: 60px;
+  background: var(--color-black);
+  border: 1px solid var(--color-golden);
+  color: #aaa;
+  box-sizing: border-box;
+  padding: 0 1rem;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid var(--color-golden);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1vw;
+  background: var(--color-black) url("../../assets/Vector.png") no-repeat
+    center right;
+  background-size: 10px 7px;
+  background-position-x: calc(100% - 10px);
+}
+
+
+
+.app__booktable-container_inputs input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid var(--color-golden);
+  border-radius: 4px;
+  padding: 8px 12px;
+  background: var(--color-black) url("../../assets/Vector.png") no-repeat
+    center right;
+  background-size: 10px 7px;
+  background-position-x: calc(100% - 10px);
+}
+
+/* Hide the default dropdown arrow */
+.app__booktable-container_inputs input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Add focus and hover styles */
+.app__booktable-container_inputs input[type="date"]:focus,
+.app__booktable-container_inputs input[type="date"]:hover {
+  border-color: #5b9dd9;
+}
+
+/* Disable text selection */
+.app__booktable-container_inputs input[type="date"]::-moz-selection {
+  background: transparent;
+}
+
+.app__booktable-container_inputs input[type="date"]::selection {
+  background: transparent;
+}
+
+
+.app__delight {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+}
+
+
+@media screen and (max-width: 1440px){
+    .app__booktable-container_inputs > * {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .app__booktable-container_inputs > * {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .app__booktable-container_inputs {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .app__booktable-container_inputs > *{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__booktable-container_inputs > * {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .app__booktable-container_inputs > * {
+        height: 40px;
+    }
+}
