@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">Log In / Register</a>
+        <Link to="/contactus"><a className="p__opensans">Log In / Register</a></Link>
         <div/>
         <Link to="/ourservices"><a href="#" className="p__opensans">Book Table</a></Link>
       </div>
